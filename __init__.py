@@ -15,8 +15,8 @@ Troom = 293.15 # room temperature [K]
 
 # First ionization potentials [V]
 IonizationPotentials = {'N': 14.53, # nitrogen
-                          'O': 13.61 # oxygen
-                          }
+                        'O': 13.61 # oxygen
+                        }
 
 # Backward compatibility
 BoltzmannConstant_JpK = BoltzmannConstant # backward compatibility only
