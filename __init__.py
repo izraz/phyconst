@@ -18,8 +18,10 @@ IonizationPotentials = {'N': 14.53, # nitrogen
                         'O': 13.61 # oxygen
                         }
 
-# Backward compatibility
-BoltzmannConstant_JpK = BoltzmannConstant # backward compatibility only
+
+# Backward compatibility ---
+
+BoltzmannConstant_JpK = BoltzmannConstant
 IonizationPotentials_V = IonizationPotentials
 Troom_K = Troom
 ProtonCharge_C = ProtonCharge
