@@ -6,7 +6,7 @@ I put this together for convenience for my own use.
 ## Units and naming
 
 Variable naming follows the PhysicalConstants package in Mathematica - names are
-descriptive in CamelCase. (Values are not identical to Mathematica though)
+descriptive in CamelCase. (Values are not identical to Mathematica though.)
 
 All units are SI unless other units are appended with an '_' to variable name.
 E.g.
