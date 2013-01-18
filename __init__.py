@@ -1,28 +1,58 @@
-"""Some physical constants
+"""Physical Constants
 
-For non-SI units, units are appended to the variable name
+Units
+-----
+All units are SI unless other units are appended with an '_' to variable name.
+
+Naming
+------
+Variable naming follows the PhysicalConstants package in Mathematica.
+(Values are not identical to Mathematica though)
+
+Source
+------
+2010 CODATA, accessed from http://physics.nist.gov/cuu/Constants/
+(unless otherwise indicated)
 """
 
-
-BoltzmannConstant = 1.3806503e-23 # Boltzmann constant [J/K]
-BoltzmannConstant_TorrLpK = 1.0355758239450354e-22 # Boltzmann constant [Torr L/K]
-
-ProtonCharge = 1.60217646e-19 # proton charge [C]
-ElectronCharge = - ProtonCharge
+SpeedOfLight    = 299792458 # speed of light in vacuum [m/s]
 
 
-Troom = 293.15 # room temperature [K]
+# elementary charge
+ElementaryCharge = 1.602176565e-19 # [C]
+ProtonCharge = ElementaryCharge
+ElectronCharge = - ElementaryCharge # Note: sign differs from Mathematica!
 
-# First ionization potentials [V]
-IonizationPotentials = {'N': 14.53, # nitrogen
-                        'O': 13.61 # oxygen
-                        }
+# proton mass
+ProtonMass   = 1.672621777e-27 # [kg]
+ProtonMass_amu = 1.007276466812 # [amu]
 
+# proton rest energy (ProtonMass * SpeedOfLight**2)
+ProtonRestEnergy = 1.503277484e-10 # [J]
+ProtonRestEnergy_MeV = 938.272046 # [MeV]
 
-# Backward compatibility ---
+# electron mass
+ElectronMass = 9.10938291e-31 # [kg]
+ElectronMass_amu = 5.4857990946e-4 # [amu]
 
-BoltzmannConstant_JpK = BoltzmannConstant
-IonizationPotentials_V = IonizationPotentials
-Troom_K = Troom
-ProtonCharge_C = ProtonCharge
-ElectronCharge_C = ElectronCharge
+# electron rest energy (ElectronMass * SpeedOfLight**2)
+ElectronRestEnergy = 8.18710506e-14 # [J]
+ElectronRestEnergy_MeV = 0.510998928 # [MeV]
+
+# Boltzmann constant
+BoltzmannConstant =  1.3806488e-23 # [J/K]
+BoltzmannConstant_TorrLpK = 1.0355746e-22 # [Torr L/K] (*calculated)
+
+# room temperature
+Troom = 293.15 # [K]
+
+# First ionization potentials
+# source: http://www.nist.gov/data/nsrds/NSRDS-NBS34.pdf
+IonizationPotentials = {'N': 14.534, # nitrogen
+                        'O': 13.618 # oxygen
+                        } # [V]
+
+# Standard atomic mass
+# source: Wikipedia
+AtomicMass_amu = {'He': 4.002602} # [amu]
+
