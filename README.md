@@ -3,20 +3,22 @@
 This is a simple python package with physical constants defined as variables.
 I put this together for convenience for my own use.
 
-## Units
+## Units and naming
+
+Variable naming follows the PhysicalConstants package in Mathematica - names are
+descriptive in CamelCase. (Values are not identical to Mathematica though)
 
 All units are SI unless other units are appended with an '_' to variable name.
+E.g.
+	
+	ProtonRestEnergy
+	
+is the proton rest energy in joules, while
+
+	ProtonRestEnergy_MeV
+	
+is the proton rest energy in MeV.
 Units are explicitly stated in a comment in each variable definition.
-
-## Naming
-
-Variable naming follows the PhysicalConstants package in Mathematica - 
-are descriptive in CamelCase, e.g.
-
-	BoltzmannConstant
-
-for the Botzmann constant in units J/K.
-(Values are not identical to Mathematica though)
 
 ## Usage
 
